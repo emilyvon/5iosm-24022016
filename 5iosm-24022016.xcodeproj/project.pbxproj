@@ -14,6 +14,8 @@
 		FFFDEB981C7D1C4400C30C7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFFDEB971C7D1C4400C30C7E /* Images.xcassets */; };
 		FFFDEB9B1C7D1C4400C30C7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFDEB991C7D1C4400C30C7E /* LaunchScreen.xib */; };
 		FFFDEBA71C7D1C4400C30C7E /* _iosm_24022016Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFDEBA61C7D1C4400C30C7E /* _iosm_24022016Tests.m */; };
+		FFFDEBB21C7D29A400C30C7E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFDEBB11C7D29A400C30C7E /* SecondViewController.m */; };
+		FFFDEBB41C7D35EA00C30C7E /* yoda-922520_1280.png in Resources */ = {isa = PBXBuildFile; fileRef = FFFDEBB31C7D35EA00C30C7E /* yoda-922520_1280.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		FFFDEBA01C7D1C4400C30C7E /* 5iosm-24022016Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "5iosm-24022016Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFDEBA51C7D1C4400C30C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFFDEBA61C7D1C4400C30C7E /* _iosm_24022016Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _iosm_24022016Tests.m; sourceTree = "<group>"; };
+		FFFDEBB01C7D29A400C30C7E /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FFFDEBB11C7D29A400C30C7E /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FFFDEBB31C7D35EA00C30C7E /* yoda-922520_1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yoda-922520_1280.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				FFFDEB971C7D1C4400C30C7E /* Images.xcassets */,
 				FFFDEB991C7D1C4400C30C7E /* LaunchScreen.xib */,
 				FFFDEB8A1C7D1C4400C30C7E /* Supporting Files */,
+				FFFDEBB01C7D29A400C30C7E /* SecondViewController.h */,
+				FFFDEBB31C7D35EA00C30C7E /* yoda-922520_1280.png */,
+				FFFDEBB11C7D29A400C30C7E /* SecondViewController.m */,
 			);
 			path = "5iosm-24022016";
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 				FFFDEB961C7D1C4400C30C7E /* Main.storyboard in Resources */,
 				FFFDEB9B1C7D1C4400C30C7E /* LaunchScreen.xib in Resources */,
 				FFFDEB981C7D1C4400C30C7E /* Images.xcassets in Resources */,
+				FFFDEBB41C7D35EA00C30C7E /* yoda-922520_1280.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFDEBB21C7D29A400C30C7E /* SecondViewController.m in Sources */,
 				FFFDEB931C7D1C4400C30C7E /* ViewController.m in Sources */,
 				FFFDEB901C7D1C4400C30C7E /* AppDelegate.m in Sources */,
 				FFFDEB8D1C7D1C4400C30C7E /* main.m in Sources */,

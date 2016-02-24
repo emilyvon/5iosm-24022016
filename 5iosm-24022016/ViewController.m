@@ -27,6 +27,8 @@
 //    float imgHeight = self.img.frame.size.height;
 //    NSLog(@"%f", imgWidth);
 //    NSLog(@"%f", imgHeight);
+    
+    // https://pixabay.com/
 }
 
 - (IBAction)sliderValueChanged:(UISlider *)sender {
@@ -36,7 +38,8 @@
     NSLog(@"slider value: %f", sender.value);
     
     float sliderValue = sender.value;
-    self.img.frame = CGRectMake(138, 67, sliderValue, sliderValue);
+//    self.img.frame = CGRectMake(138, 67, sliderValue, sliderValue);
+    [self.img setTransform:(CGAffineTransformMakeScale(sliderValue, sliderValue))];
 
 }
 
@@ -44,10 +47,11 @@
 - (IBAction)widthSliderValueChanged:(UISlider *)sender {
     self.myWidth = sender.value;
     self.img.frame = CGRectMake(138, 67, self.myWidth, self.img.frame.size.height);
+//    [self.img setTransform:(CGAffineTransformMakeScale(self.myWidth, self.img.frame.size.height))];
 }
 
 - (IBAction)heightSliderValueChanged:(UISlider *)sender {
     self.myHeight = sender.value;
-    self.img.frame = CGRectMake(138, 67, self.myWidth, self.myHeight);
+    self.img.frame = CGRectMake(138, 67, self.img.frame.size.width, self.myHeight);
 }
 @end

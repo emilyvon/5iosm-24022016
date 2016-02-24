@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-88-eQD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoda-922520_1280.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-88-eQD">
                                 <rect key="frame" x="138" y="67" width="325" height="266"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="height" constant="266" id="qO8-4j-eVh"/>
                                 </constraints>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="50" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="OuC-gh-djN">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.10000000000000001" maxValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OuC-gh-djN">
                                 <rect key="frame" x="14" y="539" width="572" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Fjf-WG-MjI"/>
@@ -77,5 +77,133 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="umH-yr-U57">
+            <objects>
+                <viewController id="mqE-2b-Sym" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aB2-wy-Cup"/>
+                        <viewControllerLayoutGuide type="bottom" id="1KI-rx-sDp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4if-pV-5dd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RC7-pg-VJh">
+                                <rect key="frame" x="198" y="28" width="204" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="GTD-Dt-8hs"/>
+                                    <constraint firstAttribute="height" constant="21" id="Ifr-gX-tu3"/>
+                                </constraints>
+                                <string key="text">Your Mortgage Payment
+Payment
+s</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter years" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37m-wP-p62">
+                                <rect key="frame" x="16" y="163" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="k7h-WU-pB2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter principle amount" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="unk-Hg-FBg">
+                                <rect key="frame" x="16" y="102" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E4Z-YL-aEQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="O3n-8n-L9Y">
+                                <rect key="frame" x="14" y="230" width="572" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gLz-lE-eH0"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="mqE-2b-Sym" eventType="valueChanged" id="PPE-kB-mta"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principle:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftO-hq-4V1">
+                                <rect key="frame" x="22" y="77" width="72" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="i9a-2U-FWX"/>
+                                    <constraint firstAttribute="width" constant="72" id="ufO-FH-jdH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Years:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDa-Bs-RAs">
+                                <rect key="frame" x="22" y="140" width="47" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KKy-Ky-EaP"/>
+                                    <constraint firstAttribute="width" constant="47" id="nag-3Y-RNU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yearly interest rates:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjm-RQ-eBO">
+                                <rect key="frame" x="22" y="206" width="287" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Jdx-Ts-Q26"/>
+                                    <constraint firstAttribute="width" constant="287" id="v3j-lo-lzc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your monthly repayment: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTD-U4-Ycu">
+                                <rect key="frame" x="16" y="304" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kqm-Sz-sbC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O3n-8n-L9Y" firstAttribute="leading" secondItem="4if-pV-5dd" secondAttribute="leadingMargin" id="1nt-sE-Dlj"/>
+                            <constraint firstItem="unk-Hg-FBg" firstAttribute="top" secondItem="RC7-pg-VJh" secondAttribute="bottom" constant="53" id="2i5-es-3rJ"/>
+                            <constraint firstItem="HTD-U4-Ycu" firstAttribute="top" secondItem="O3n-8n-L9Y" secondAttribute="bottom" constant="44" id="4Lt-5J-67u"/>
+                            <constraint firstItem="unk-Hg-FBg" firstAttribute="leading" secondItem="4if-pV-5dd" secondAttribute="leadingMargin" id="BTD-do-QeI"/>
+                            <constraint firstAttribute="centerX" secondItem="RC7-pg-VJh" secondAttribute="centerX" id="CIh-qC-a2j"/>
+                            <constraint firstItem="unk-Hg-FBg" firstAttribute="top" secondItem="ftO-hq-4V1" secondAttribute="bottom" constant="4" id="RBf-WS-OI1"/>
+                            <constraint firstItem="kjm-RQ-eBO" firstAttribute="leading" secondItem="4if-pV-5dd" secondAttribute="leadingMargin" constant="6" id="TUH-ry-wV0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HTD-U4-Ycu" secondAttribute="trailing" id="Ue4-8Q-obJ"/>
+                            <constraint firstItem="O3n-8n-L9Y" firstAttribute="top" secondItem="37m-wP-p62" secondAttribute="bottom" constant="37" id="Uos-ki-VdV"/>
+                            <constraint firstItem="RC7-pg-VJh" firstAttribute="top" secondItem="aB2-wy-Cup" secondAttribute="bottom" constant="8" id="Wsn-bH-qwB"/>
+                            <constraint firstItem="O3n-8n-L9Y" firstAttribute="top" secondItem="kjm-RQ-eBO" secondAttribute="bottom" constant="3" id="cUe-3N-1UE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="unk-Hg-FBg" secondAttribute="trailing" id="ciI-gc-jsN"/>
+                            <constraint firstItem="37m-wP-p62" firstAttribute="top" secondItem="vDa-Bs-RAs" secondAttribute="bottom" constant="2" id="dXZ-Nu-gvq"/>
+                            <constraint firstItem="37m-wP-p62" firstAttribute="top" secondItem="unk-Hg-FBg" secondAttribute="bottom" constant="31" id="juG-1j-03u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="37m-wP-p62" secondAttribute="trailing" id="lYv-lB-X64"/>
+                            <constraint firstItem="vDa-Bs-RAs" firstAttribute="leading" secondItem="4if-pV-5dd" secondAttribute="leadingMargin" constant="6" id="mht-tz-bbS"/>
+                            <constraint firstItem="ftO-hq-4V1" firstAttribute="leading" secondItem="4if-pV-5dd" secondAttribute="leadingMargin" constant="6" id="osh-Cl-ib0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O3n-8n-L9Y" secondAttribute="trailing" id="p2O-lc-LTZ"/>
+                            <constraint firstItem="HTD-U4-Ycu" firstAttribute="leading" secondItem="4if-pV-5dd" secondAttribute="leadingMargin" id="t5c-4X-tKc"/>
+                            <constraint firstItem="37m-wP-p62" firstAttribute="leading" secondItem="4if-pV-5dd" secondAttribute="leadingMargin" id="vpO-1R-SRF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="principleAmtTxtField" destination="unk-Hg-FBg" id="xYP-zi-y8y"/>
+                        <outlet property="rateSlider" destination="O3n-8n-L9Y" id="HaR-sx-NjP"/>
+                        <outlet property="repaymentAmtLbl" destination="HTD-U4-Ycu" id="WDY-W8-8TI"/>
+                        <outlet property="yearsTxtField" destination="37m-wP-p62" id="hr6-Dp-ye1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fH8-BI-PQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="802"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="yoda-922520_1280.png" width="1280" height="1024"/>
+    </resources>
 </document>
